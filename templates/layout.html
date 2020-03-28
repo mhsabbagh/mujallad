@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="auto">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+  <link rel="icon" href="{{ url_for('static', filename='favicon.png') }}" type="image/png" sizes="24x24"> 
+  {% block header %} {% endblock %}
+</head>
+
+<body>
+  
+  <div id="wrapper">
+  
+    <aside>
+      <ul>
+        {% for bookpage in bookpages %}
+        <a href="{{ websiteUrl }}/bookpage/{{bookpage[2]}}"><li> {{ bookpage[0] }}</li></a>
+        {% endfor %}
+      </ul>
+      
+      <footer>    
+        <p>مُشغّل بواسطة <a href="https://github.com/mhsabbagh/mujallad">سكربت مجلّد</a></p>
+      </footer>
+    </aside>
+
+    <div id="mainbody">
+      <header>
+        <a href="{{ websiteUrl }}"><h1>{{websiteName}}</h1></a>
+        <h2>{{websiteDesc}}</h2>
+      </header>
+      <article>
+        {% block content %} {% endblock %}
+      </article>
+    </div>
+
+
+    </div>
+
+
+</body>
+
+</html>

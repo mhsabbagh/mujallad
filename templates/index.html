@@ -1,0 +1,9 @@
+{% extends "layout.html" %}
+{% block header %}
+ <title>{{ websiteName }}</title>
+ <meta name="description" content="{{websiteDesc}}"/>
+{% endblock %}
+
+{% block content %}
+ {{bookpages[0][1] | safe}}
+{% endblock %}

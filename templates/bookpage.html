@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+{% block header %}
+{% for bookpage in bookpages if bookpage[2] == pagenumber %}
+ <title>{{ websiteName }} - {{ pagenumber }} - {{ bookpage[0] }}</title>
+ <meta name="description" content="{{bookpage[1] | striptags | truncate(170)}}"/>
+ {% endfor %}
+  
+{% endblock %}
+
+{% block content %}
+
+ {% for bookpage in bookpages if bookpage[2] == pagenumber %}
+ {{bookpage[1] | safe}}
+ {% endfor %}
+ 
+{% endblock %}

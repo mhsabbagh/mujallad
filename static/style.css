@@ -1,0 +1,139 @@
+@font-face {
+  font-family: "DroidNaksh";
+  src: url("font.ttf");
+  font-weight: normal;
+}
+@font-face {
+  font-family: Ubuntu;
+  src: url("ubuntu.ttf");
+  unicode-range: U+0020-007F;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background: #f9f9f9;
+  font-family: 'Lato';
+  font-weight: 400;
+  transition-duration: 0.5s ease;
+  direction: rtl;
+  font-family: Ubuntu, DroidNaksh;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  background: #f0f0f0;
+}
+header {
+  text-align: center;
+  padding-bottom: 2.5vh;
+}
+header h1 {
+  font-size: 26px;
+  line-height: 28px;
+}
+header h2 {
+  color: #555;
+  font-size: 14px;
+  line-height: 15px;
+}
+#wrapper {
+  display: flex;
+}
+aside {
+  background: #001f3f;
+  width: 25vw;
+  height: 100vh;
+  overflow-y: scroll;
+  margin-left: 2.5%;
+}
+aside ul:before {
+  content: "جدول المحتويات";
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+}
+aside ul {
+  list-style: none; 
+}
+aside ul li {
+  display: table;
+  margin: 5px;
+  padding: 5px;
+  transition-duration: 0.3s;
+}
+aside ul li:hover {
+  background: #0074D9;
+}
+aside ul a {
+  color: #f9f9f9;
+}
+#mainbody a {
+  color: #0074D9;
+}
+article {
+  text-align: justify;
+  width: 70vw;
+  height: 85vh;
+  padding-left: 5vw;
+  overflow-y: auto;
+}
+article a {
+  transition-duration: 0.3s;
+}
+article a:hover {
+	background: #0074D9;
+	color: #fff !important;
+}
+footer {
+  color: #f9f9f9;
+  text-align: center;
+  padding-top: 2.5vh;
+}
+footer a {
+  color: #f9f9f9;
+  text-decoration: underline;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  display: flex;
+  margin: 0 auto;
+}
+pre {
+  font-family: "Ubuntu";
+  text-align: left;
+  direction: ltr;
+  background: #222;
+  padding: 20px;
+  color: #fff;
+}
+table {
+  border-spacing: 0px;
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 15px;
+  background-color: transparent;
+  text-align: left;
+}
+th {
+  font-weight: bold;
+  border: 1px solid #cccccc;
+  padding: 8px;
+}
+td {
+  border: 1px solid #cccccc;
+  padding: 8px;
+}
+tr th {
+  background-color: #dddddd;
+}
+tr {
+  background-color: transparent;
+  border-top: 1px solid #cccccc;
+  border-bottom: 1px solid #cccccc;
+}
+th, td {
+  border: none;
+}
+
