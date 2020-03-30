@@ -1,4 +1,24 @@
-@import url("m.style.css");
+/**
+Responsive Design
+**/
+
+@media only screen and (max-width: 950px) {
+    #sidebar {
+        display: none;
+    }
+    #article {
+      width: 100%;
+    }
+}
+
+@media only screen and not (max-width: 950px) {
+    #toggle {
+        display: none !important;
+    }
+}
+
+/****/
+
 @font-face {
   font-family: "DroidNaksh";
   src: url("font.ttf");
