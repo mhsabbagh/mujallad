@@ -2,21 +2,17 @@
 Responsive Design
 **/
 
-@media only screen and (max-width: 950px) {
+@media (max-width: 950px) {
     #sidebar {
         display: none;
     }
     #article {
       width: 100%;
     }
-}
-
-@media only screen and not (max-width: 950px) {
     #toggle {
-        display: none !important;
+      display: block !important;
     }
 }
-
 /****/
 
 @font-face {
