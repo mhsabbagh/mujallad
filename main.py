@@ -36,16 +36,15 @@ def readdocs():
 
 @app.errorhandler(404)
 def page_not_found(e):
-  return render_template('404.html', bookpages=bookpages), 404
+  return render_template('404.html', bookpages=readdocs()), 404
 
 @app.route('/')
 def show_index():
-  return render_template('index.html', bookpages=bookpages)
+  return render_template('index.html', bookpages=readdocs())
 
 @app.route('/bookpage/<int:pageurl>')
 def show_page(pageurl):
-  return render_template('bookpage.html', bookpages=bookpages, pagenumber=pageurl)
+  return render_template('bookpage.html', bookpages=readdocs(), pagenumber=pageurl)
 
 if __name__ == "__main__":
-  readdocs()
   app.run(host='0.0.0.0')
