@@ -120,9 +120,12 @@ pre {
   text-align: left;
   direction: ltr;
   background: #222;
-  padding: 20px;
+  padding: 1em;
+  margin-right: 0.5em;
   color: #fff;
-  max-width: 100%;
+  max-width: 80vw;
+  overflow-x: auto;
+  box-sizing: border-box;
 }
 table {
   border-spacing: 0px;
