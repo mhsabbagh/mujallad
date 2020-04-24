@@ -42,10 +42,6 @@ header {
   text-align: center;
   padding-bottom: 2.5vh;
 }
-header h1 {
-  font-size: 26px;
-  line-height: 28px;
-}
 header h2 {
   color: #555;
   font-size: 14px;

@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
-  <link rel="icon" href="{{ url_for('static', filename='favicon.png') }}" type="image/png" sizes="24x24"> 
+  <link rel="icon" href="{{ url_for('static', filename='favicon.png') }}" type="image/png" sizes="22x27"> 
   {% block header %} {% endblock %}
   <script>
     function togglesidebar() {
@@ -43,7 +43,7 @@
 
     <div id="mainbody">
       <header>
-        <a href="{{ websiteUrl }}"><h1>{{websiteName}}</h1></a>
+        <img src="{{ url_for('static', filename='logo.png') }}" />
         <h2>{{websiteDesc}}</h2>
       </header>
       <article id="article">
