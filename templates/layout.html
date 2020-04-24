@@ -28,6 +28,11 @@
   <div id="wrapper">
   
     <aside id="sidebar">
+      <div id="header">
+        <a href="{{ websiteUrl }}"><img src="{{ url_for('static', filename='logo.png') }}" /></a>
+        <h2>{{websiteDesc}}</h2>
+      </div>
+      
       <ul>
         {% for bookpage in bookpages %}
         <a href="{{ websiteUrl }}/bookpage/{{bookpage[2]}}"><li> {{ bookpage[0] }}</li></a>
@@ -39,13 +44,9 @@
       </footer>
     </aside>
     
-    <a id="toggle" style="display:none;font-size: 120%;padding-right: 25px;margin-bottom:10px;" onclick="togglesidebar()">☰</a>
+    <a id="toggle" style="display:none;font-size: 120%;margin-right: 10px;padding: 10px;" onclick="togglesidebar()">☰</a>
 
     <div id="mainbody">
-      <header>
-        <a href="{{ websiteUrl }}"><img src="{{ url_for('static', filename='logo.png') }}" /></a>
-        <h2>{{websiteDesc}}</h2>
-      </header>
       <article id="article">
         {% block content %} {% endblock %}
       </article>

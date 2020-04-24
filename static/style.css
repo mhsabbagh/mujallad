@@ -38,15 +38,6 @@ body {
   overflow-y: hidden;
   background: #f0f0f0;
 }
-header {
-  text-align: center;
-  padding-bottom: 2.5vh;
-}
-header h2 {
-  color: #555;
-  font-size: 14px;
-  line-height: 15px;
-}
 #wrapper {
   display: flex;
 }
@@ -57,6 +48,13 @@ aside {
   overflow-y: scroll;
   margin-left: 2.5%;
 }
+aside h2 {
+  color: #f9f9f9;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 10px;
+  text-align: center;
+}
 aside ul:before {
   content: "جدول المحتويات";
   color: #fff;
@@ -65,6 +63,7 @@ aside ul:before {
 }
 aside ul {
   list-style: none; 
+  padding-right: 20px;
 }
 aside ul li {
   display: table;
@@ -82,8 +81,8 @@ aside ul a {
   color: #0074D9;
 }
 article {
+  height: 100vh;
   width: 70vw;
-  height: 85vh;
   padding-left: 5vw;
   overflow-y: auto;
 }
@@ -97,7 +96,7 @@ article a:hover {
 footer {
   color: #f9f9f9;
   text-align: center;
-  padding-top: 2.5vh;
+  padding: 5px;
 }
 footer a {
   color: #f9f9f9;
