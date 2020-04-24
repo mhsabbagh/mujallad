@@ -49,6 +49,18 @@
     <div id="mainbody">
       <article id="article">
         {% block content %} {% endblock %}
+        
+        <div class="navigation">
+        {% if pagenumber == 1 %}
+            <p><a href="{{ websiteUrl }}/bookpage/{{pagenumber+1}}">الصفحة التالية 🡐</a></p>
+        {% elif pagenumber == bookpages|length %}
+            <p><a href="{{ websiteUrl }}/bookpage/{{pagenumber-1}}">🡒 الصفحة السابقة</a></p>
+        {% else %}
+            <p><a href="{{ websiteUrl }}/bookpage/{{pagenumber-1}}">🡒 الصفحة السابقة</a></p>
+            <p><a href="{{ websiteUrl }}/bookpage/{{pagenumber+1}}">الصفحة التالية 🡐</a></p>
+        {% endif %}
+          
+        </div>
       </article>
     </div>
 

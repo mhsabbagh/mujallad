@@ -40,7 +40,7 @@ def page_not_found(e):
 
 @app.route('/')
 def show_index():
-  return render_template('index.html', bookpages=readdocs())
+  return render_template('index.html', bookpages=readdocs(), pagenumber=1)
 
 @app.route('/bookpage/<int:pageurl>')
 def show_page(pageurl):

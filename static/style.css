@@ -12,6 +12,9 @@ Responsive Design
     #toggle {
       display: block !important;
     }
+    .navigation > p {
+      width: 40%;
+    }
 }
 /****/
 
@@ -150,4 +153,11 @@ tr {
 }
 th, td {
   border: none;
+}
+.navigation {
+  display: flex;
+  margin: 0 auto;
+}
+.navigation > p {
+  margin: 0 auto;
 }
