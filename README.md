@@ -16,7 +16,7 @@
 
 يمكنك استخدام السكربت لأي شيء تقريبًا، فهو يدعم الصور مثلًا:
 
-![alt text](https://i.imgur.com/ejJ0xco.png "Logo Title Text 1")
+![alt text](https://i.imgur.com/4H4Aopu.png "Logo Title Text 1")
 
 وكذلك الأكواد:
 
