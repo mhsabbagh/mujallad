@@ -44,10 +44,11 @@
       </footer>
     </aside>
     
-    <a id="toggle" style="display:none;font-size: 120%;margin-right: 10px;padding: 10px;" onclick="togglesidebar()">☰</a>
+    
 
     <div id="mainbody">
       <article id="article">
+      <a href="#" id="toggle" style="display:none;" onclick="togglesidebar()">☰</a>
         {% block content %} {% endblock %}
         
         <div class="navigation">

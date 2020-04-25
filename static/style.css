@@ -11,9 +11,14 @@ Responsive Design
     }
     #toggle {
       display: block !important;
+      padding-right: -5vw;
+      font-size: 150%;
     }
     .navigation > p {
       width: 40%;
+    }
+    article {
+    box-shadow: inset -10px 0px 35px 0px rgba(0,0,0,0.24) !important;
     }
 }
 /****/
@@ -48,8 +53,7 @@ aside {
   background: #001f3f;
   width: 25vw;
   height: 100vh;
-  overflow-y: scroll;
-  margin-left: 2.5%;
+  overflow-y: auto;
 }
 aside h2 {
   color: #f9f9f9;
@@ -87,7 +91,9 @@ article {
   height: 100vh;
   width: 70vw;
   padding-left: 5vw;
+  padding-right: 5vw;
   overflow-y: auto;
+  box-shadow: inset -20px 0px 35px 0px rgba(0,0,0,0.24);
 }
 article a {
   transition-duration: 0.3s;
@@ -157,6 +163,7 @@ th, td {
 .navigation {
   display: flex;
   margin: 0 auto;
+  margin-bottom: 20px;
 }
 .navigation > p {
   margin: 0 auto;
